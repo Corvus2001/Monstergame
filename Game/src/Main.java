@@ -1,5 +1,9 @@
+import Menü.Menue;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Menue MenueMain = new Menue();
+        MenueMain.displayMenu();
+        MenueMain.handleSelection();
     }
 }
