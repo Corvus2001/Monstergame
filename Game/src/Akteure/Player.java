@@ -10,6 +10,11 @@ public class Player {
     int playerAge;
      String playerMotto;
 
+    List<String> inventory = new ArrayList<>();
+    inventory add "TestObject";
+
+
+
      //Konstruktor
     public Player(){
         this.playerlevel=playerlevel;
