@@ -1,11 +1,17 @@
 package Menü;
+import Methoden.AllMethods;
+
 import java.util.Scanner;
 
 
-import Methoden.AllMethods;
-
 public class Menue {
-    AllMethods AllMethodsMenue = new AllMethods();
+
+    //AllMethods instanzierung durch Kunstroktor mann kann nicht einfach gegenseitig instanzieren bei 2 klassen sonst kommt circular dependency
+    private AllMethods AllMethodsMenue;
+    public Menue (AllMethods allMethods){
+        this.AllMethodsMenue=allMethods;
+    }
+//--------------------------------------------------------------------
 
     public String[] MenueOptions = {"Start new Game", "Continue Game", "Save Game", "Quit Game"};
 
